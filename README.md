@@ -10,6 +10,7 @@ This is a starter template for Laravel projects. All it does is glue together th
 - PestPHP
 - Laravel Backup
 - Laravel Debugbar
+- VsCode Setup
 
 ## Installation
 
