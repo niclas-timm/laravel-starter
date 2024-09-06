@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -14,7 +15,12 @@ use Tests\TestCase;
 |
 */
 
-uses(TestCase::class, RefreshDatabase::class)->in('Feature');
+uses(TestCase::class, RefreshDatabase::class)
+    ->beforeEach(function () {
+        $this->user = User::factory()->create();
+        \Illuminate\Support\Facades\Storage::fake('public');
+    })
+    ->in(__DIR__);
 
 /*
 |--------------------------------------------------------------------------
