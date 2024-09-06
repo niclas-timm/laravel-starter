@@ -12,6 +12,7 @@
         "blade-ui-kit/blade-icons": "^1.7",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.9",
+        "laravel/sanctum": "^4.0",
         "laravel/slack-notification-channel": "^3.3",
         "laravel/tinker": "^2.9",
         "spatie/laravel-backup": "^9.0"
