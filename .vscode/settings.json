@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint",
+    },
+    "bladeFormatter.format.enabled": true,
+    "laravel-pint.preset": "laravel",
+    "laravel-pint.enable": true,
+    "php.version": "8.3",
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "intelephense.environment.phpVersion": "8.3"
+}

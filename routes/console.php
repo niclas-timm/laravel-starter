@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Foundation\Inspiring;
-use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schedule;
+// Daily
+Schedule::command('backup:run --only-db')->daily()->at('01:30');
 
-Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
-})->purpose('Display an inspiring quote')->hourly();
+// Weekly
+Schedule::command('backup:run')->weeklyOn(0, '04:00');
